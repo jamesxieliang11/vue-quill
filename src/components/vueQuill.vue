@@ -26,7 +26,6 @@ class MyLink extends Link {
   static create(value) {
     let node = super.create(value);
     value = this.sanitize(value);
-    console.log(value)
     if (!(value.indexOf("http://") === 0 || value.indexOf("https://") === 0)) {
       value = "http://" + value;
     }
@@ -34,8 +33,7 @@ class MyLink extends Link {
     return node;
   }
 }
-Quill.register(MyLink);
-
+Quill.register(MyLink, true);
 
 export default {
   data() {
