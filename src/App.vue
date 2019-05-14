@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <h3>demo1 link</h3>
     <vue-quill/>
+    <h3 style="margin-top: 60px">demo2 line-height</h3>
+    <vue-line-height/>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import vueQuill from './components/vueQuill.vue'
+import vueLineHeight from './components/vueLineHeight.vue'
 
 export default {
   name: 'app',
   components: {
-    vueQuill
+    vueQuill,
+    vueLineHeight
   }
 }
 </script>
